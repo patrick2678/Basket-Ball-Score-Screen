@@ -22,3 +22,9 @@ function incrementGuestTwo() {
 function incrementGuestThree() {
   document.getElementById("guestScore").textContent = guestScoreView += 3;
 }
+function clearScore() {
+  homeScoreView = 0;
+  guestScoreView = 0;
+  document.getElementById("homeScore").textContent = homeScoreView;
+  document.getElementById("guestScore").textContent = guestScoreView;
+}
