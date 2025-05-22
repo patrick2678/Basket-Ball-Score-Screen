@@ -1,49 +1,92 @@
-@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+@import url("https://fonts.cdnfonts.com/css/cursed-timer-ulil");
+
 body {
-    margin: 0;
-    background-color: #1B244A;
+  margin: 0;
+  background-color: #1b244a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  width: 80%;
+  max-width: 600px;
 }
-.Team{
-    color:#EEEEEE;
+
+.Team {
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.Home{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  color: #f94f6d;
+  font-size: 4.5rem;
+  width: 8rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }
-.Guest{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+
+.score {
+  margin: 0;
 }
-.box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    color: #F94F6D;
-    font-size: 3.5rem;
-    width: 6rem;
-    height: 4.5rem;    
-background-color: black;
+
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Change to space-around */
+  gap: 0.75rem;
+  margin-top: 2rem;
+  width: 80%;
+  max-width: 600px;
 }
-.score{
-    margin-top: 0 auto;
+
+.home-buttons {
+  display: flex;
+  gap: 0.5rem;
 }
-.button-container{
-    display: flex;
-    margin-top: 1rem;
-    justify-content: space-evenly;
+
+.guest-buttons {
+  display: flex;
+  gap: 0.5rem;
 }
-.btn{
-    background-color: #1B244A;
-    border: 0.1rem solid white;
-   font-family: 'Cursed Timer ULiL', sans-serif;
-   color: lightgray ;
+
+.btn {
+  background-color: #1b244a;
+  border: 0.1rem solid #eeeeee;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  color: lightgray;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+.clear-btn {
+  background-color: #ffa500;
+  color: white;
+  border-color: #ffa500;
+  padding: 0.75rem 1.5rem; /* Adjust padding for the 'Clear Score' button */
+}
+
+.clear-btn:hover {
+  background-color: #ffb74d;
 }
