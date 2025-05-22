@@ -48,7 +48,7 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: space-around; /* Change to space-around */
+  justify-content: space-around;
   gap: 0.75rem;
   margin-top: 2rem;
   width: 80%;
@@ -88,7 +88,7 @@ body {
   background-color: #ffa500;
   color: white;
   border-color: #ffa500;
-  padding: 0.75rem 1.5rem; /* Adjust padding for the 'Clear Score' button */
+  padding: 0.75rem 1.5rem;
 }
 
 .clear-btn:hover {
