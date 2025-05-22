@@ -7,24 +7,28 @@
       <div class="Team Home">
         <h3>HOME</h3>
         <div class="box-container">
-          <span id="homeScore" class="score"> </span>
+          <span id="homeScore" class="score">0</span>
+        </div>
+        <div class="home-buttons">
+          <button class="btn" onclick="incrementHomeOne()">+1</button>
+          <button class="btn" onclick="incrementHomeTwo()">+2</button>
+          <button class="btn" onclick="incrementHomeThree()">+3</button>
         </div>
       </div>
       <div class="Team Guest">
-        <h3>Away</h3>
+        <h3>GUEST</h3>
         <div class="box-container">
-          <span id="guestScore" class="score"> </span>
+          <span id="guestScore" class="score">0</span>
+        </div>
+        <div class="guest-buttons">
+          <button class="btn" onclick="incrementGuestOne()">+1</button>
+          <button class="btn" onclick="incrementGuestTwo()">+2</button>
+          <button class="btn" onclick="incrementGuestThree()">+3</button>
         </div>
       </div>
     </div>
     <div class="button-container">
-      <button class="btn" onclick="incrementHomeOne()">+1</button>
-      <button class="btn" onclick="incrementHomeTwo()">+2</button>
-      <button class="btn" onclick="incrementHomeThree()">+3</button>
-
-      <button class="btn" onclick="incrementGuestOne()">+1</button>
-      <button class="btn" onclick="incrementGuestTwo()">+2</button>
-      <button class="btn" onclick="incrementGuestThree()">+3</button>
+      <button class="btn clear-btn" onclick="clearScore()">Clear Score</button>
     </div>
     <script src="index.js"></script>
   </body>
